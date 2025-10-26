@@ -23,4 +23,5 @@ async function connectToDatabase() {
 export default async function handler(req, res) {
   await connectToDatabase();
   res.status(200).json({ message: "Node backend running on Vercel!" });
+  
 }
